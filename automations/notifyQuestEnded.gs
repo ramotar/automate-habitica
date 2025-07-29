@@ -13,7 +13,7 @@ function notifyQuestEnded(questKey) {
   let params = Object.assign({
     "contentType": "application/json",
     "payload": JSON.stringify({
-      "message": "Quest completed: " + content.quests[questKey].text,
+      "message": "Quest completed: **" + content.quests[questKey].text + "**",
       "toUserId": USER_ID
     })
   }, POST_PARAMS);
