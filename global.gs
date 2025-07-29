@@ -514,6 +514,8 @@ function interruptLoop() {
  * run time).
  */
 function beforeCronSkills(retry) {
+  console.log("Casting Before Cron Skills");
+
   try {
 
     let playerClass = getUser().stats.class;
@@ -544,6 +546,8 @@ function beforeCronSkills(retry) {
  * just after the player's cron.
  */
 function afterCronSkills(retry) {
+  console.log("Casting After Cron Skills");
+
   try {
 
     let playerClass = getUser().stats.class;
@@ -575,6 +579,8 @@ function afterCronSkills(retry) {
  * damage to the quest boss.
  */
 function useExcessMana(retry) {
+  console.log("Using Excess Mana");
+
   try {
 
     let playerClass = getUser().stats.class;
